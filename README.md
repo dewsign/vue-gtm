@@ -26,7 +26,7 @@ This plugin will helps you in your common GTM tasks.
 
 # Configuration
 
-`npm install vue-gtm -S` or `yarn add vue-gtm` if you use [Yarn package manager](https://yarnpkg.com/)
+`npm install @dewsign/vue-gtm -S` or `yarn add @dewsign/vue-gtm` if you use [Yarn package manager](https://yarnpkg.com/)
 
 Here is an example of configuration, compose with it on your own :
 
@@ -39,6 +39,7 @@ Vue.use(VueGtm, {
   id: 'GTM-xxxxxxx', // Your GTM ID
   enabled: true, // defaults to true. Plugin can be disabled by setting this to false for Ex: enabled: !!GDPR_Cookie (optional)
   debug: true, // Whether or not display console logs debugs (optional)
+  loadScript: true, // Whether or not to load the GTM Script (Helpful if you are including GTM manually, but need the dataLayer functionality in your components) (optional) 
   vueRouter: router, // Pass the router instance to automatically sync with router (optional)
   ignoredViews: ['homepage'] // If router, you can exclude some routes name (case insensitive) (optional)
 });
@@ -162,5 +163,7 @@ this.$gtm.debug(false)
 ```
 
 ## Credits
+
+[mib200 (Original Author)](https://github.com/mib200/vue-gtm)
 
 [ScreamZ vue-analytics](https://github.com/ScreamZ/vue-analytics)
