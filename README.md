@@ -31,7 +31,7 @@ This plugin will helps you in your common GTM tasks.
 Here is an example of configuration, compose with it on your own :
 
 ```javascript
-import VueGtm from 'vue-gtm';
+import VueGtm from '@dewsign/vue-gtm';
 import VueRouter from 'vue-router';
 const router = new VueRouter({ routes, mode, linkActiveClass });
 
